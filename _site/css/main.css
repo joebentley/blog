@@ -1,0 +1,20 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+
+    max-width: 32em;
+    margin: 2em auto 4em auto;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: 20ch 1fr;
+    grid-template-rows: 2em;
+}
+
+.home-link {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+}
