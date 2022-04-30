@@ -10,7 +10,7 @@ body {
 .posts {
     display: grid;
     grid-template-columns: 20ch 1fr;
-    grid-template-rows: 2em;
+    grid-auto-rows: 2em;
 }
 
 .home-link {
