@@ -21,10 +21,12 @@ module.exports = function(eleventyConfig) {
     return `${toOrdinal(date.getDate())} of ${months[date.getMonth()]} ${date.getFullYear()}`
   })
 
+  let pathPrefix = process.env.PATH_PREFIX ? process.env.PATH_PREFIX : "";
+
   eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('images');
   return {
     passthroughFileCopy: true,
-    pathPrefix: "/blog/"
+    pathPrefix
   }
 }

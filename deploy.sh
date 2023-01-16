@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-npx @11ty/eleventy || { echo 'build failed' ; exit 1; }
+PATH_PREFIX="/blog/" npx @11ty/eleventy || { echo 'build failed' ; exit 1; }
 rm -r ~/Site/blog
 cp -r _site ~/Site/blog
 
