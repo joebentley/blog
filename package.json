@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "serve": "python -m http.server 9000 -d _site"
   },
   "keywords": [],
   "author": "",
