@@ -7,6 +7,10 @@ body {
     margin: 2em auto 4em auto;
 }
 
+code {
+    font-size: 1rem;
+}
+
 .posts {
     display: grid;
     grid-template-columns: 20ch 1fr;
