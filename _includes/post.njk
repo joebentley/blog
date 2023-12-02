@@ -1,25 +1,14 @@
 ---
 tags: post
+layout: basic.njk
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{ "/css/main.css" | url }}>
-    <link rel="icon" type="image/x-icon" href={{"/images/favicon.ico" | url}}>
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <a class="home-link" href={{"/" | url}}>Home</a>
+<a class="home-link" href={{"/" | url}}>Home</a>
 
-    <h1>{{ title }}</h1>
+<h1>{{ title }}</h1>
 
-    <p>{{ date | dateToWords }}</p>
+<p>{{ date | dateToWords }}</p>
 
-    <div>{{ content | safe }}</div>
+<div>{{ content | safe }}</div>
 
-    <p><a href="mailto:joebentley10@gmail.com">Joe Bentley</a></p>
-  </body>
-</html>
+<p><a href="mailto:joebentley10@gmail.com">Joe Bentley</a></p>

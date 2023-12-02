@@ -1,21 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{"/css/main.css" | url}}>
-    <link rel="icon" type="image/x-icon" href={{"/images/favicon.ico" | url}}>
-    <title>Blog</title>
-  </head>
-  <body>
-    <h1>Joe's Blog</h1>
+---
+layout: basic.njk
+---
 
-    <p><a href={{"/wasan/" | url}}>Wasan</a></p>
+<h1>Joe's Blog</h1>
 
-    <div class="posts">
-      {%- for post in collections.post | reverse -%}
-        <div class="date">{{post.date | dateToWords}}</div> <div class="url"><a href={{post.url | url}}>{{ post.data.title }}</a></div>
-      {%- endfor -%}
-    </div>
-  </body>
-</html>
+<p><a href={{"/wasan/" | url}}>Wasan</a></p>
+
+<div class="posts">
+  {%- for post in collections.post | reverse -%}
+    <div class="date">{{post.date | dateToWords}}</div> <div class="url"><a href={{post.url | url}}>{{ post.data.title }}</a></div>
+  {%- endfor -%}
+</div>
