@@ -10,10 +10,12 @@
   <body>
     <h1>Joe's Blog</h1>
 
-    <p><a href={{"/wasan/" | url}}>Wasan</a></p>
+    <a class="home-link" href={{"/" | url}}>Home</a>
+
+    <p><a href={{"/wasan/" | url}}>Back to Wasan</a></p>
 
     <div class="posts">
-      {%- for post in collections.post | reverse -%}
+      {%- for post in collections.post | onlyshozomatzu | reverse -%}
         <div class="date">{{post.date | dateToWords}}</div> <div class="url"><a href={{post.url | url}}>{{ post.data.title }}</a></div>
       {%- endfor -%}
     </div>

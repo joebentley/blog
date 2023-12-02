@@ -52,6 +52,11 @@ module.exports = function(eleventyConfig) {
     return `${toOrdinal(date.getDate())} of ${months[date.getMonth()]} ${date.getFullYear()}`
   })
 
+  eleventyConfig.addFilter("onlyshozomatzu", function (collection) {
+    // console.log(collection[0].url.split('/'))
+    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'shōzōmatsu')
+  })
+
   let pathPrefix = process.env.PATH_PREFIX ? process.env.PATH_PREFIX : "";
 
   eleventyConfig.addPassthroughCopy('css');
