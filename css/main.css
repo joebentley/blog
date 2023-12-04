@@ -2,11 +2,14 @@
 body {
     font-family: Baskerville, Georgia, 'Times New Roman', Times, serif;
     font-size: 14pt;
-    text-align: justify;
-    text-justify: auto;
 
     max-width: 32em;
     margin: 2em auto 4em auto;
+}
+
+p {
+    text-align: justify;
+    text-justify: auto;
 }
 
 code {
