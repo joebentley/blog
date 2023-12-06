@@ -52,8 +52,16 @@ module.exports = function(eleventyConfig) {
     return `${toOrdinal(date.getDate())} of ${months[date.getMonth()]} ${date.getFullYear()}`
   })
 
+  eleventyConfig.addFilter("nowasan", function (collection) {
+    return collection.filter(post => post.url.split('/').length <= 3 || post.url.split('/')[2] !== 'wasan')
+  })
+
   eleventyConfig.addFilter("onlywasan", function (collection) {
     return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[2] === 'wasan')
+  })
+
+  eleventyConfig.addFilter("onlyjodo", function (collection) {
+    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'jōdo')
   })
 
   eleventyConfig.addFilter("onlyshozomatzu", function (collection) {

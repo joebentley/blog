@@ -2,10 +2,12 @@
 layout: basic.njk
 ---
 
-<h1>Joe's Blog</h1>
+<h2>Wasan</h2>
 <a class="home-link" href={{"/" | url}}>Home</a>
 
-<p><a href={{"/" | url}}>Back</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/shōzōmatsu" | url}}>Only Shōzōmatsu</a></p>
+<p><b>Warning:</b> WIP, probably bad.</p>
+
+<p><a href={{"/" | url}}>Back</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/jōdo" | url}}>Only Jōdo</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/shōzōmatsu" | url}}>Only Shōzōmatsu</a></p>
 
 <div class="posts">
   {%- for post in collections.post | onlywasan | reverse -%}

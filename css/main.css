@@ -12,6 +12,10 @@ p {
     text-justify: auto;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 code {
     font-size: 1rem;
 }
