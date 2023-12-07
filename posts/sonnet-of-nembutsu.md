@@ -8,6 +8,7 @@ Reflection of a single nianfo
 disrobes me of the ills of endless past  
 and shines the light of donkey's years ago  
 to bring me to the endless peace at last.  
+---
 
 There was a man who many practise did  
 who asked his Lama "will I soon finish?"  

@@ -1,3 +1,5 @@
+const markdownIt = require("markdown-it");
+
 function toOrdinal(number) {
   if (number === 1) {
     return "1st";
@@ -10,7 +12,21 @@ function toOrdinal(number) {
   }
 }
 
+const MARKDOWN_OPTIONS =
+      {
+          html: true,
+          breaks: false,
+          linkify: true
+      };
+
 module.exports = function(eleventyConfig) {
+  let markdownLibrary = markdownIt(MARKDOWN_OPTIONS);
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+  eleventyConfig.addFilter("toHTML", str => {
+    return new markdownIt(MARKDOWN_OPTIONS).renderInline(str);
+  });
+
   // When `permalink` is false, the file is not written to disk
 	eleventyConfig.addGlobalData("eleventyComputed.permalink", function() {
 		return (data) => {
@@ -67,6 +83,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("onlyshozomatzu", function (collection) {
     return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'shōzōmatsu')
   })
+
+  eleventyConfig.setFrontMatterParsingOptions({ excerpt: true });
 
   let pathPrefix = process.env.PATH_PREFIX ? process.env.PATH_PREFIX : "";
 

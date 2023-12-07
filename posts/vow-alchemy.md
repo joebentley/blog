@@ -7,6 +7,7 @@ layout: post.njk
 ![Alchemy pot from Dragon Quest 8]({{ "/images/alchemy_pot.jpg" | url }})
 
 It is written that the Buddha Amitabha (Infinite light and life), then the bodhisattva Dharmakara said,
+---
 
 > If, when I attain Buddhahood, sentient beings in the lands of the ten quarters who sincerely and joyfully entrust themselves to me, desire to be born in my land, and call my Name, even ten times, should not be born there, may I not attain perfect Enlightenment. Excluded, however, are those who commit the five gravest offences and abuse the right Dharma.
 

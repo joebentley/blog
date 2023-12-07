@@ -7,6 +7,7 @@ layout: post.njk
 ![Amitabha shining Infinite Light on Shandao and a family of devotees]({{ "/images/amitabha.jpg" | url }})
 
 I started my Buddhist journey shortly after lockdown, which is almost three years ago. I have struggled with mental health problems throughout my life—though thankfully minor compared to many—and it seemed to me there was a pragmatic reason that I should make some special effort to protect my mind during that time, which was looking to be tough for everyone.
+---
 
 Like many westerners who are approaching Buddhism, the entire religion seemed extremely opaque. Looking through my western "Judeo-scientific" lens, I spent an inordinate amount of time considering what was supposed to be literal or metaphorical. I was attached to a secular worldview. Western transmissions of Japanese Zen were then the obvious choice.
 

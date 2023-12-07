@@ -6,6 +6,7 @@ layout: post.njk
 ---
 
 Jodo Shinshu is often summarised with the phrase "shinjin shoin shomyo ho'on" (信心正因　称名報恩). Shinjin is 信心, it means faith or entrusting, particularly the *mind* of faith and entrusting. Shoin is 正因, it means "true cause". 正 means correct or true, and 因 means cause. Shomyo is 称名, it means "praising the name". 称 means praise, and 名 means name. Ho'on is 報恩, it means gratitude, or "repaying a kindness". 
+---
 
 The first part, shinjin shoin (信心正因), summarises the main innovation of Shinran Shonin: the true cause is shinjin, the mind of faith, the effect being rebirth in Amida Buddha's Pure Land which is taken to be effectively equivalent to enlightenment itself. This is the basic doctrine of Shin Buddhism, and the main thing that distinguishes it from all earlier Pure Land teachings. Shinjin is generally considered to be the absence of doubt, and one expression of doubt is self-power (jiriki, 自力), as opposed to Other Power (tariki, 他力).
 

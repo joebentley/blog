@@ -5,6 +5,7 @@ layout: post.njk
 ---
 
 In Notes on "Essentials on Faith Alone", Shinran clarifies the meaning of "diamond-like shinjin":
+---
 
 > When sentient beings realize this shinjin, they attain the equal of perfect enlightenment and will ultimately attain the supreme enlightenment, being of the same stage as Maitreya, the future Buddha. That is, they become established in the stage of the truly settled. Hence shinjin is like a diamond, never breaking, or degenerating, or becoming fragmented; thus, we speak of "diamondlike shinjin."
 
