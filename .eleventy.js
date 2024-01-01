@@ -80,6 +80,10 @@ module.exports = function(eleventyConfig) {
     return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'jōdo')
   })
 
+  eleventyConfig.addFilter("onlykoso", function (collection) {
+    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'kōso')
+  })
+
   eleventyConfig.addFilter("onlyshozomatzu", function (collection) {
     return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'shōzōmatsu')
   })

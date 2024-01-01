@@ -1,0 +1,15 @@
+---
+layout: basic.njk
+---
+
+<h2>Kōso Wasan</h2>
+
+<a class="home-link" href={{"/" | url}}>Home</a>
+
+<p><a href={{"/wasan/" | url}}>Back to Wasan</a></p>
+
+<div class="posts">
+  {%- for post in collections.post | onlykoso | reverse -%}
+    <div class="date">{{post.date | dateToWords}}</div> <div class="url"><a href={{post.url | url}}>{{ post.data.title }}</a></div>
+  {%- endfor -%}
+</div>
