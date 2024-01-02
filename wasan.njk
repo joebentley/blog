@@ -5,7 +5,7 @@ layout: basic.njk
 <h2>Wasan</h2>
 <a class="home-link" href={{"/" | url}}>Home</a>
 
-<p><a href={{"/" | url}}>Back</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/jōdo" | url}}>Only Jōdo</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/kōso" | url}}>Only Kōso</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/shōzōmatsu" | url}}>Only Shōzōmatsu</a></p>
+<p><a href={{"/" | url}}>Back</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/jodo" | url}}>Only Jōdo</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/koso" | url}}>Only Kōso</a>&nbsp;&nbsp;&nbsp;<a href={{"/wasan/shozomatsu" | url}}>Only Shōzōmatsu</a></p>
 
 <div class="posts">
   {%- for post in collections.post | onlywasan | reverse -%}

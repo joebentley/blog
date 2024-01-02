@@ -77,15 +77,15 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addFilter("onlyjodo", function (collection) {
-    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'jōdo')
+    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'jodo')
   })
 
   eleventyConfig.addFilter("onlykoso", function (collection) {
-    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'kōso')
+    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'koso')
   })
 
   eleventyConfig.addFilter("onlyshozomatzu", function (collection) {
-    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'shōzōmatsu')
+    return collection.filter(post => post.url.split('/').length > 3 && post.url.split('/')[3] === 'shozomatsu')
   })
 
   eleventyConfig.setFrontMatterParsingOptions({ excerpt: true });
